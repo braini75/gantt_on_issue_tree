@@ -1,0 +1,18 @@
+= Redmine Plugin: gantt_on_issue_tree
+
+== Requirements 
+Redmine 3.x
+
+== Description:
+This Redmine-Plugin adds a "Show Gantt of Issue(s)" offers a tree view for browsing projects. 
+
+== Installation
+1. go to `{REDMINE_ROOT}/plugin` directory.
+2. Install:
+  git clone https://github.com/braini75/gantt_on_issue_tree.git
+3. Restart the redmine service. E.g. `service apache2 restart`
+4. enjoy!
+(There is no need for database migration, as this plugin does not change anything in the database.)
+
+== Usage
+Find a new link "Show Gantt of Issue(s): show" at the Issue details bottom page.

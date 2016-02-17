@@ -1,0 +1,6 @@
+# English strings go here for Rails i18n
+en:
+  # my_label: "My label"
+  label_goi_hook: "Show Gantt of Issue(s): "
+  label_goi_quick_name: "Show"
+  label_link_goi_tooltip: "Generates Gantt of the current Issue and all sub-Issues"
