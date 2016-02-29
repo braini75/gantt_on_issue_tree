@@ -2,5 +2,6 @@
 en:
   # my_label: "My label"
   label_goi_hook: "Show Gantt of Issue(s): "
-  label_goi_quick_name: "Show"
+  label_goi_hook_show: "Show"
+  label_goi_hook_list: "List"
   label_link_goi_tooltip: "Generates Gantt of the current Issue and all sub-Issues"

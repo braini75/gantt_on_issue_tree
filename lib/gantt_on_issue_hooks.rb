@@ -9,9 +9,12 @@ class GanttOnIssueHook < Redmine::Hook::ViewListener
     if !context[:issue].nil?
       ret_str = ''
       ret_str << '<p class="other-formats">' << l(:label_goi_hook)
-      ret_str << content_tag('span', link_to(l(:label_goi_quick_name),
-                                            { :controller => 'gantt_on_issue_tree', :action => 'generate', :issue_id => context[:issue] },
+      ret_str << content_tag('span', link_to(l(:label_goi_hook_show),
+                                            { :controller => 'gantt_on_issue_tree', :action => 'show_gant', :issue_id => context[:issue] },
                                             { :rel => 'nofollow', :title => l(:label_link_goi_tooltip) }))
+      ret_str << content_tag('span', link_to(l(:label_goi_hook_list),
+                                            { :controller => 'gantt_on_issue_tree', :action => 'show_list', :issue_id => context[:issue] },
+                                            { :rel => 'nofollow', :title => l(:label_link_goi_tooltip) }))                                            
       ret_str << '</p>'
       return ret_str.html_safe
     end
